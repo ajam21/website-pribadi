@@ -8,164 +8,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Pribadi - Muhammad Azzam</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #1abc9c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header-profil {
+            width: 140px;
+            height: auto;
+            float: left;
+            margin-left: 15px;
+            border-radius: 10px; /* Perbaiki border-radius */
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        section p,
+        section ul {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: #fff;
+        }
+
+        td {
+            background-color: #bdc3c7;
+        }
+
+        .gallery-item {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 150px; /* Atur ukuran gambar */
+            height: auto; /* Sesuaikan tinggi secara otomatis */
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #1abc9c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .header-profil {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p,
+            section ul {
+                font-size: 1rem;
+            }
+
+            footer .social-icons a {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+
+            section p,
+            section ul {
+                font-size: 0.9rem;
+            }
+
+            footer .social-icons a {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-}
-
-header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 5px solid #1abc9c;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.header-profil{
-    width: 140px;
-    height: auto;
-    float: left;
-    margin-left: 15px ;
-    border-radius: 10 0%;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #1abc9c;
-}
-
-section {
-    padding: 40px 20px;
-    margin: 20px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #2980b9;
-    margin-bottom: 15px;
-}
-
-section p, section ul {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-section ul li {
-    margin-bottom: 10px;
-    margin-left: 15px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 1rem;
-    color: #555;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 15px;
-    text-align: center;
-}
-
-th {
-    background-color: #34495e;
-    color: #fff;
-}
-
-td {
-    background-color: #bdc3c7;
-}
-
-.gallery-item {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.gallery-item img {
-    width: 150px; /* Atur ukuran gambar */
-    height: auto; /* Sesuaikan tinggi secara otomatis */
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 40px;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-footer .social-icons a {
-    color: white;
-    font-size: 2rem;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #1abc9c;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-</style>
 
 <body>
     <header>
         <img src="Azzam.jpeg" alt="azzam" class="header-profil">
         <h1>Selamat Datang di Website Pribadi Saya</h1>
-        
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -178,12 +236,12 @@ html {
     </header>
     <section id="home">
         <h2>Home</h2>
-        <p>Halo! Nama saya Muhammad Azzam. Saat ini, saya adalah seorang mahasiswa yang bersemangat, sekaligus 
-            bekerja di perusahaan yang bergerak di bidang teknologi sebagai Technical Support. Saya memiliki ketertarikan yang 
-            mendalam terhadap semua hal yang berkaitan dengan teknologi. Dari perangkat keras hingga perangkat lunak, saya selalu 
-            berusaha untuk memperluas pengetahuan dan keterampilan saya. Dengan pengalaman ini, saya dapat membantu memecahkan 
-            masalah teknis yang dihadapi pengguna, sekaligus belajar tentang inovasi terbaru dalam dunia teknologi yang terus 
-            berkembang. Saya percaya bahwa teknologi memiliki potensi luar biasa untuk mengubah kehidupan dan memudahkan berbagai 
+        <p>Halo! Nama saya Muhammad Azzam. Saat ini, saya adalah seorang mahasiswa yang bersemangat, sekaligus
+            bekerja di perusahaan yang bergerak di bidang teknologi sebagai Technical Support. Saya memiliki ketertarikan yang
+            mendalam terhadap semua hal yang berkaitan dengan teknologi. Dari perangkat keras hingga perangkat lunak, saya selalu
+            berusaha untuk memperluas pengetahuan dan keterampilan saya. Dengan pengalaman ini, saya dapat membantu memecahkan
+            masalah teknis yang dihadapi pengguna, sekaligus belajar tentang inovasi terbaru dalam dunia teknologi yang terus
+            berkembang. Saya percaya bahwa teknologi memiliki potensi luar biasa untuk mengubah kehidupan dan memudahkan berbagai
             aspek sehari-hari.
         </p>
     </section>
@@ -252,9 +310,9 @@ html {
     </section>
     <section id="lainnya">
         <h2>Informasi Lainnya</h2>
-        <p> Sebagai seorang yang memiliki hasrat dalam bidang multimedia, saya selalu terpikat oleh keindahan di sekitar saya. Dalam setiap momen yang saya dokumentasikan, 
-            baik itu dalam acara sekolah atau kegiatan di lingkungan tempat tinggal, saya berusaha untuk menangkap esensi dari setiap pengalaman. Menjadi bagian dari tim 
-            dokumentasi memberi saya kesempatan untuk merekam kisah-kisah yang mungkin tidak terulang, sekaligus berbagi momen-momen berharga dengan orang lain. Dengan lensa kamera di tangan, 
+        <p> Sebagai seorang yang memiliki hasrat dalam bidang multimedia, saya selalu terpikat oleh keindahan di sekitar saya. Dalam setiap momen yang saya dokumentasikan,
+            baik itu dalam acara sekolah atau kegiatan di lingkungan tempat tinggal, saya berusaha untuk menangkap esensi dari setiap pengalaman. Menjadi bagian dari tim
+            dokumentasi memberi saya kesempatan untuk merekam kisah-kisah yang mungkin tidak terulang, sekaligus berbagi momen-momen berharga dengan orang lain. Dengan lensa kamera di tangan,
             saya berkomitmen untuk tidak hanya melihat, tetapi juga merasakan dan berbagi setiap cerita yang terukir dalam setiap frame.</p>
         <div class="gallery-item">
             <img src="azzamm.jpeg" alt="azzam">
