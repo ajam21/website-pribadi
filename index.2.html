@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="id">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi - Muhammad Azzam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #1abc9c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-profil{
+    width: 140px;
+    height: auto;
+    float: left;
+    margin-left: 15px ;
+    border-radius: 10 0%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #34495e;
+    color: #fff;
+}
+
+td {
+    background-color: #bdc3c7;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 150px; /* Atur ukuran gambar */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1abc9c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
+<body>
+    <header>
+        <img src="Azzam.jpeg" alt="azzam" class="header-profil">
+        <h1>Selamat Datang di Website Pribadi Saya</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#jadwal">Jadwal Kuliah</a></li>
+                <li><a href="#aktivitas">Aktivitas</a></li>
+                <li><a href="#lainnya">Informasi Lainnya</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Halo! Nama saya Muhammad Azzam. Saat ini, saya adalah seorang mahasiswa yang bersemangat, sekaligus 
+            bekerja di perusahaan yang bergerak di bidang teknologi sebagai Technical Support. Saya memiliki ketertarikan yang 
+            mendalam terhadap semua hal yang berkaitan dengan teknologi. Dari perangkat keras hingga perangkat lunak, saya selalu 
+            berusaha untuk memperluas pengetahuan dan keterampilan saya. Dengan pengalaman ini, saya dapat membantu memecahkan 
+            masalah teknis yang dihadapi pengguna, sekaligus belajar tentang inovasi terbaru dalam dunia teknologi yang terus 
+            berkembang. Saya percaya bahwa teknologi memiliki potensi luar biasa untuk mengubah kehidupan dan memudahkan berbagai 
+            aspek sehari-hari.
+        </p>
+    </section>
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <h3>Pendidikan Formal</h3>
+        <ul>
+            <li>SDIT Zam Zam Kurnia (2011-2017)</li>
+            <li>MTsN 1 Kota Bekasi (2016-2020)</li>
+            <li>SMA PGRI 1 Kota Bekasi (2020-2023)</li>
+            <li>Universitas Bina Insani (2023-sekarang)</li>
+        </ul>
+    </section>
+    <section id="jadwal">
+        <h2>Jadwal Kuliah</h2>
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Mata Kuliah</th>
+                <th>Jam</th>
+            </tr>
+            <tr>
+                <td>Senin</td>
+                <td>Perancangan Basis Data</td>
+                <td>20:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>Bahasa Inggris</td>
+                <td>18:00 - 19:45</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>Interaksi Manusia Komputer</td>
+                <td>20:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>Sistem Operasi Lanjut</td>
+                <td>18:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>Pemograman Web Dasar</td>
+                <td>20:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>Arsitektur & Organisasi Komputer</td>
+                <td>18:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>20:00 - 22:00</td>
+            </tr>
+        </table>
+    </section>
+    <section id="aktivitas">
+        <h2>Aktivitas</h2>
+        <p>Saya aktif dalam berbagai organisasi selama bersekolah, antara lain.</p>
+        <ul>
+            <li>Anggota Kompi Khusus Pramuka (MTs)</li>
+            <li>Anggota Multimedia PGRI (SMA)</li>
+        </ul>
+    </section>
+    <section id="lainnya">
+        <h2>Informasi Lainnya</h2>
+        <p> Sebagai seorang yang memiliki hasrat dalam bidang multimedia, saya selalu terpikat oleh keindahan di sekitar saya. Dalam setiap momen yang saya dokumentasikan, 
+            baik itu dalam acara sekolah atau kegiatan di lingkungan tempat tinggal, saya berusaha untuk menangkap esensi dari setiap pengalaman. Menjadi bagian dari tim 
+            dokumentasi memberi saya kesempatan untuk merekam kisah-kisah yang mungkin tidak terulang, sekaligus berbagi momen-momen berharga dengan orang lain. Dengan lensa kamera di tangan, 
+            saya berkomitmen untuk tidak hanya melihat, tetapi juga merasakan dan berbagi setiap cerita yang terukir dalam setiap frame.</p>
+        <div class="gallery-item">
+            <img src="azzamm.jpeg" alt="azzam">
+            <figcaption>Dokumentasi Acara di Sekolah</figcaption>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ajam.azzam/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.link/cuxbhz">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:muhammadazzambinjames@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
